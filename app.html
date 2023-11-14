@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XO</title>
+    <link rel="stylesheet" href="packages/utils/css/default.css">
+    <link rel="stylesheet" href="packages/utils/css/flexbox.min.css">
+    <link rel="stylesheet" href="packages/utils/css/text.min.css">
+    <link rel="stylesheet" href="packages/components/style.css">
+    <link rel="stylesheet" href="packages/components/animates.css">
+</head>
+<body>
+    <main>
+        <p id="response-paragraph-level" class="response-paragraph-level">1/10</p>
+        <div class="response-game-o display-column align-center justify-space-around" id="response-game-o">
+            <figure id="figure-o">
+                <span id="span-o">O</span>
+            </figure>
+            <p>Nome: <span id="response-o-name-user">Nelson</span></p>
+            <p>Victorias: <span id="response-paragraph-point-o">0</span></p>
+        </div>
+        <div class="response-game-x display-column align-center justify-space-around" id="response-game-x">
+            <figure id="figure-x">
+                <span id="span-x">X</span>
+            </figure>
+            <p>Nome: <span id="response-x-name-user">Mirai</span></p>
+            <p>Victorias: <span id="response-paragraph-point-x">0</span></p>
+        </div>
+        <div class="response-game-winner display-column align-center justify-space-around" id="response-winn">
+            <div class="text display-row align-center justify-space-around">
+                <p id="name-winner">[Name]</p>
+                <p>é o vencedor!</p>
+            </div>
+            <button id="close-messagebox" onclick="backHome()">Início</button>
+        </div>
+        <div class="response-game-equal display-column align-center justify-space-around" id="response-equal">
+            <div class="text display-row align-center justify-space-between">
+                <p id="first-name">[Name]</p>
+                <p>Empatou com</p>
+                <p id="second-name">[Name]</p>
+            </div>
+            <button id="close-messagebox" onclick="backHome()">Inicío</button>
+        </div>
+
+        <div class="content-game display-column align-center justify-center" id="content-game">
+            <div class="horizontal-line"></div>
+            <div class="vertical-line"></div>
+
+            <div class="content-game-table display-column align-center justify-space-between">
+                <div class="table-line first-line display-row align-center justify-space-between" id="table-first-line">
+                    <button id="button-option-first-first" data-button-option data-button-first-line></button>
+                    <button id="button-option-first-second" data-button-option data-button-first-line></button>
+                    <button id="button-option-first-third" data-button-option data-button-first-line></button>
+                </div>
+                <div class="table-line second-line display-row align-center justify-space-between" id="table-second-line">
+                    <button id="button-option-second-first" data-button-option data-button-second-line></button>
+                    <button id="button-option-second-second" data-button-option data-button-second-line></button>
+                    <button id="button-option-second-third" data-button-option data-button-second-line></button>
+                </div>
+                <div class="table-line third-line display-row align-center justify-space-between" id="table-third-line">
+                    <button id="button-option-third-first" data-button-option data-button-third-line></button>
+                    <button id="button-option-third-second" data-button-option data-button-third-line></button>
+                    <button id="button-option-third-third" data-button-option data-button-third-line></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-displays-options display-column align-center justify-space-around" id="display">
+            <header>
+                <p>XO</p>
+            </header>
+            <aside class="aside-play-with-user display-column justify-space-around align-center" id="play-with-user">
+                <div class="aside-user-name display-column justify-space-around align-center">
+                    <p>Insert yours name</p>
+                    <input type="text" id="user-name-x">
+                    <input type="text" id=user-name-o>
+                </div>
+                <div class="aside-user-time display-column align-center justify-space-around">
+                    <p>Number of times</p>
+                    <select name="" id="select-level">
+                        <option value="1">1</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="aside-user-button-play display-column align-center justify-center">
+                    <button id="play-user">Play vs user</button>
+                </div>
+            </aside>
+            <aside class="aside-play-with-computer display-column justify-space-around align-center" id="play-with-computer">
+                <div class="aside-computer-dificult display-column align-center justify-space-between">
+                    <p>Dificult</p>
+                    <div class="options display-row align-flex-end justify-space-between">
+                        <button>Easy</button>
+                        <button>Normal</button>
+                        <button>Hard</button>
+                    </div>
+                </div>
+                <div class="aside-computer-time display-column align-center justify-space-between">
+                    <p>Number of Times</p>
+                    <select name="" id="">
+                        <option value="1">1</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="aside-computer-button-play display-column align-center justify-center">
+                    <button id="play-computer">Play vs computer</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+    
+    <script src="dist/configs.js"></script>
+    <script src="dist/nodesElements.js"></script>
+    <script src="dist/responses.js"></script>
+    <script src="dist/domain.js"></script>
+    <script src="dist/functions.js"></script>
+    <script src="dist/eventsButtons.js"></script>
+</body>
+</html>

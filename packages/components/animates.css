@@ -1,0 +1,29 @@
+.horizontal-line {
+  width: 30%;
+  height: 15%;
+  border-top: 8px solid var(--tertiary-color);
+  border-bottom: 8px solid var(--tertiary-color);
+  position: absolute;
+}
+
+.vertical-line {
+  width: 10%;
+  height: 46%;
+  border-left: 8px solid var(--tertiary-color);
+  border-right: 8px solid var(--tertiary-color);
+  position: absolute;
+}
+
+.option {
+  color: red;
+}
+
+.O {
+  color: yellow;
+}
+
+.winner {
+  color: green;
+  font-size: 350%;
+}
+/*# sourceMappingURL=animates.css.map */
